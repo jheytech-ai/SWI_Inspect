@@ -113,3 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const icon = themeToggle.querySelector('i');
     icon.className = savedTheme === 'light' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
 });
+
+// CONTROLE DO MENU HAMBÚRGUER (MOBILE)
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    menuToggle.querySelector('i').className = navMenu.classList.contains('active') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+});
