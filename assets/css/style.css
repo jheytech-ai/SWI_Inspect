@@ -495,12 +495,14 @@ body {
     }
 
     .controls {
-        margin-left: 16px; /* Reduz a margem para dar espaço ao toggle */
+        margin-left: 0; /* Remove a margem no menu mobile */
+        flex-direction: column; /* Empilha os controles verticalmente */
+        gap: 20px; /* Adiciona espaço entre os controles empilhados */
+        margin-top: 30px; /* Adiciona espaço acima dos controles */
     }
 
     .nav-container {
-        /* Garante que o logo não seja empurrado */
-        justify-content: space-between;
+        justify-content: space-between; /* Garante que o logo não seja empurrado */
     }
 }
 
