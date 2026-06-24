@@ -1,0 +1,478 @@
+/* CONFIGURAÇÃO DINÂMICA DE TEMAS (VARIÁVEIS) */
+:root {
+    /* TEMA ESCURO (Padrão baseado na logo) */
+    --bg-main: #000000;
+    --bg-surface: #0a1118;
+    --bg-surface-alt: #02060c;
+    --primary: #063b67;
+    --primary-hover: #042949;
+    --text-main: #e2e8f0;
+    --text-heading: #ffffff;
+    --text-muted: #94a3b8;
+    --border-color: rgba(6, 59, 103, 0.2);
+    --nav-bg: rgba(0, 0, 0, 0.85);
+}
+
+[data-theme="light"] {
+    /* TEMA CLARO */
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-surface-alt: #f1f5f9;
+    --primary: #063b67;
+    --primary-hover: #042949;
+    --text-main: #334155;
+    --text-heading: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --nav-bg: rgba(255, 255, 255, 0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* NAVBAR RESPONSIVA */
+.navbar {
+    background-color: var(--nav-bg);
+    border-bottom: 2px solid var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 65px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-left: 24px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--text-heading);
+}
+
+.nav-links .btn-nav-cta {
+    background-color: var(--primary);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.nav-links .btn-nav-cta:hover {
+    background-color: var(--primary-hover);
+}
+
+/* CONTROLES (TEMA E IDIOMA) */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: 24px;
+}
+
+.control-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.control-btn:hover {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.lang-switcher {
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.lang-btn.active {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+/* HERO */
+.hero {
+    padding: 140px 0 100px;
+    /* O ../ faz o CSS sair da pasta 'css' e achar a pasta 'images' */
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%), 
+                      url('../images/fundo/image.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-content { max-width: 850px; }
+
+.hero-tagline {
+    color: #ffffff;
+    background-color: var(--primary);
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.hero-actions { display: flex; gap: 16px; }
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 32px;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover { background-color: var(--primary-hover); }
+
+.btn-secondary {
+    border: 2px solid var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 32px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover { background-color: var(--primary); }
+
+/* SEÇÕES */
+.certificacoes, .servicos, .sobre {
+    padding: 90px 0;
+    transition: background-color 0.3s;
+}
+
+.servicos { background-color: var(--bg-surface-alt); }
+
+.section-title {
+    font-size: 2rem;
+    color: var(--text-heading);
+    font-weight: 700;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 50px;
+}
+
+/* GRIDS RESPONSIVOS (MOBILE-FIRST FLEXÍVEL) */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.cert-card {
+    background-color: var(--bg-surface);
+    padding: 40px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    border-top: 5px solid var(--primary);
+    transition: transform 0.3s;
+}
+
+.cert-card:hover { transform: translateY(-5px); }
+
+.cert-icon-box {
+    font-size: 2rem;
+    color: var(--text-heading);
+    margin-bottom: 20px;
+}
+
+.cert-card h3 {
+    font-size: 1.3rem;
+    color: var(--text-heading);
+    margin-bottom: 12px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.service-card-header {
+    background-color: var(--bg-surface-alt);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.service-card-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-heading);
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 24px;
+}
+
+.service-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.service-card ul li i {
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.sobre-content { max-width: 850px; }
+.sobre-content p { margin-bottom: 20px; font-size: 1.1rem; }
+
+/* ==========================================================================
+   FOOTER PREMIUM ASIMÉTRICO (LOGO DESTACADA NA ESQUERDA)
+   ========================================================================== */
+.footer {
+    background-color: var(--bg-main);
+    padding: 90px 0 30px;
+    border-top: 3px solid var(--primary);
+    transition: background-color 0.3s;
+}
+
+/* Distribuição do Grid: Esquerda menor / Direita maior */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 80px;
+    align-items: center; /* Alinha a logo perfeitamente no centro vertical das infos */
+    margin-bottom: 50px;
+}
+
+/* Lado Esquerdo - Apenas a Logo */
+.footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100%;
+    max-width: 260px; /* Tamanho de respeito para a logo brilhar na esquerda */
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.03);
+}
+
+/* Lado Direito - Bloco de Informações */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.footer-brand-desc p {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    max-width: 600px;
+    font-weight: 300;
+}
+
+.footer-contacts h3 {
+    color: var(--text-heading);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-links-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.contact-links-list li {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 14px;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.contact-links-list li i {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-top: 4px;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-links-list li a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-links-list li a:hover {
+    color: var(--text-heading);
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 32px;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-start; /* Impede o botão de esticar ao longo da largura da div */
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.15);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebd58;
+    transform: translateY(-2px);
+}
+
+/* Faixa de direitos autorais inferior */
+.footer-bottom {
+    border-top: 1px solid var(--border-color);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* RESPONSIVIDADE COMPLETA (ADAPTAÇÃO PARA CELULAR) */
+@media (max-width: 968px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* No mobile vira uma coluna só */
+        gap: 45px;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        max-width: 180px; /* Reduz ligeiramente a logo em telas menores para equilíbrio */
+    }
+    
+    .footer-right {
+        align-items: center; /* Centraliza todos os blocos de texto no celular */
+    }
+    
+    .contact-links-list li {
+        justify-content: center; /* Centraliza os ícones de contato */
+        text-align: left; /* Mantém o texto alinhado à esquerda dentro do bloco centralizado */
+    }
+    
+    .btn-whatsapp {
+        align-self: center; /* Centraliza o botão do WhatsApp no mobile */
+    }
+}
