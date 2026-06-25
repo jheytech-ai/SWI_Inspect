@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome Pro para Ícones Institucionais -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Flag Icon CSS para bandeiras -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
     <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,39 +16,53 @@
 </head>
 <body>
 
+    <!-- PRELOADER -->
+    <div id="loader-wrapper">
+        <img src="assets/images/logo/SWI.png" alt="SWI Logo Loading">
+    </div>
+
     <!-- NAVBAR PREMIUM INTEGRADA -->
     <header class="navbar">
         <div class="container nav-container">
             <!-- Grupo de Identidade: Ícone + Textos Alinhados Lateralmente -->
             <div class="logo-brand-group">
                 <div class="logo-icons">
-                    <img src="assets/images/logo/Design sem nome (3).png" alt="SWI Icon" class="nav-icon-img dark-logo">
-                    <img src="assets/images/logo/SWI (4).jpg" alt="SWI Icon" class="nav-icon-img light-logo">
+                    <img src="assets/images/logo/logo_azul.png" alt="SWI Icon" class="nav-icon-img">
                 </div>
                 <div class="brand-text">
                     <span class="brand-main">SWI</span>
                     <span class="brand-sub">SEA WORLD INSPECTION</span>
                 </div>
             </div>
-            
-            <!-- Grupo Funcional: Links e Controles em Caixa -->
-            <div class="nav-right-side">
-                <nav class="nav-links">
-                    <a href="#servicos"><span data-i18n="nav-services">SERVIÇOS</span></a>
-                    <a href="#sobre"><span data-i18n="nav-about">SOBRE</span></a>
-                    <a href="#cobertura"><span data-i18n="nav-coverage">COBERTURA</span></a>
-                    <a href="#contato"><span data-i18n="nav-contact">CONTATO</span></a>
-                </nav>
 
-                <div class="nav-controls">
-                    <button id="lang-toggle-btn" class="box-btn">EN</button>
-                    <button id="theme-toggle" class="box-btn" title="Alternar Tema">
-                        <i class="fa-solid fa-gear"></i>
-                    </button>
-                </div>
+            <!-- Links de Navegação -->
+            <nav class="nav-links">
+                <a href="#servicos"><span data-i18n="nav-services">SERVIÇOS</span></a>
+                <a href="#sobre"><span data-i18n="nav-about">SOBRE</span></a>
+                <a href="#cobertura"><span data-i18n="nav-coverage">COBERTURA</span></a>
+                <a href="#contato"><span data-i18n="nav-contact">CONTATO</span></a>
+            </nav>
+
+            <!-- Controles de Idioma e Tema -->
+            <div class="nav-controls">
+                <button id="lang-toggle-btn-desktop" class="box-btn"><span id="lang-icon-container-desktop"></span></button>
+                <button id="theme-toggle-desktop" class="box-btn" title="Alternar Tema"><span id="theme-icon-container-desktop"></span></button>
             </div>
+
+            <!-- Botão Hambúrguer para Mobile -->
+            <button id="hamburger-btn" class="hamburger-btn" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </header>
+
+    <!-- MENU LATERAL (DRAWER) PARA MOBILE -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <button id="drawer-close-btn" class="drawer-close-btn" aria-label="Fechar menu">&times;</button>
+        <nav class="drawer-nav-links"></nav>
+        <div class="drawer-controls"></div>
+    </div>
+    <div id="drawer-overlay" class="drawer-overlay"></div>
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -73,7 +89,7 @@
                         <div class="cert-premium-icon-box"><i class="fa-solid fa-award"></i></div>
                     </div>
                     <div class="cert-card-right">
-                        <h3 class="cert-premium-title">UKATA</h3>
+                        <h3 class="cert-premium-title" data-i18n="cert-ukata-title">UKATA</h3>
                         <p class="cert-premium-text">
                             <strong data-i18n="cert-ukata-bold">Asbestos Awareness E-Learning</strong> — <span data-i18n="cert-ukata-desc">Conformidade com a Regulação 10 do Control of Asbestos Regulations e diretrizes L143 para mapeamento e gestão de amianto.</span>
                         </p>
@@ -87,7 +103,7 @@
                         <div class="cert-premium-icon-box"><i class="fa-solid fa-certificate"></i></div>
                     </div>
                     <div class="cert-card-right">
-                        <h3 class="cert-premium-title">DNV GL</h3>
+                        <h3 class="cert-premium-title" data-i18n="cert-dnv-title">DNV GL</h3>
                         <p class="cert-premium-text">
                             <strong data-i18n="cert-dnv-bold">HazMat Training LITE</strong> — <span data-i18n="cert-dnv-desc">Qualificação técnica oficial para o desenvolvimento de Inventários de Materiais Perigosos (IHM) e Visual Sampling Plans conforme regras da UE.</span>
                         </p>
@@ -237,22 +253,22 @@
             </div>
 
             <div class="ports-premium-grid">
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Santos – SP</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Rio de Janeiro – RJ</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Paranaguá – PR</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Itajaí – SC</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Porto Alegre – RS</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Salvador – BA</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Suape – PE</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Manaus – AM</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Macaé – RJ</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Vitória – ES</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>São Sebastião – SP</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Aratu – BA</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Buenos Aires – AR</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Montevidéu – UY</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Roterdã – NL</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Mombasa – KE</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-santos">Santos – SP</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-rio">Rio de Janeiro – RJ</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-paranagua">Paranaguá – PR</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-itajai">Itajaí – SC</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-poa">Porto Alegre – RS</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-salvador">Salvador – BA</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-suape">Suape – PE</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-manaus">Manaus – AM</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-macae">Macaé – RJ</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-vitoria">Vitória – ES</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-saoseba">São Sebastião – SP</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-aratu">Aratu – BA</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-buenosaires">Buenos Aires – AR</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-montevideo">Montevidéu – UY</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-rotterdam">Roterdã – NL</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-mombasa">Mombasa – KE</span></div>
             </div>
         </div>
     </section>
@@ -325,7 +341,7 @@
                 <!-- COLUNA DIREITA: CONVERSÃO & TEXTO -->
                 <div class="sobre-text-block">
                     <span class="section-tag" data-i18n="about-tag" style="text-align: left;">DIREÇÃO TÉCNICA</span>
-                    <h2 class="about-title"><i class="fa-solid fa-building-shield"></i> <span data-i18n="about-title">Sobre a SWI Sea World Inspection</span></h2>
+                    <h2 class="about-title"><span data-i18n="about-title">Sobre a SWI Sea World Inspection</span></h2>
                     <p class="about-p" data-i18n="about-p1">Sob a direção de <strong>Vagner Ribeiro</strong>, a SWI consolida sólida bagagem prática em vistorias navais e perícias operacionais portuárias. Nosso compromisso é emitir laudos técnicos de alta confiabilidade, precisão e total isenção jurídica, protegendo os ativos de nossos clientes.</p>
                     <p class="about-p" data-i18n="about-p2">Com qualificações obtidas junto a autoridades marítimas globais como a DNV GL, oferecemos respostas ágeis e atendimento focado na estrita conformidade técnica exigida internacionalmente.</p>
                     
@@ -367,29 +383,126 @@
         </div>
     </section>
 
-    <!-- FOOTER ASSIMÉTRICO PREMIUM -->
-    <footer id="contato" class="footer">
-        <div class="container footer-grid">
-            <div class="footer-left">
-                <img src="assets/images/logo/SWI.png" alt="SWI Full Logo" class="footer-logo">
-            </div>
-            <div class="footer-right">
-                <p class="footer-desc" data-i18n="footer-brand-desc">Soluções periciais de engenharia naval e conformidade ambiental regulatória.</p>
-                <div class="footer-contact-info">
-                    <h3><i class="fa-solid fa-headset"></i> <span data-i18n="footer-contact-title">Canais de Atendimento</span></h3>
-                    <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> Rua Margarida de Araújo Franco, 1384 - Apt 09 | SJP - PR</li>
-                        <li><i class="fa-solid fa-phone"></i> +55 (41) 98780-9525</li>
-                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:vagner.ribeiro@swinspection.com.br">vagner.ribeiro@swinspection.com.br</a></li>
+    <!-- NOVA SEÇÃO DE CONTATO (BASEADA EM image_082e88.png) -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="contact-grid-layout">
+                <!-- Coluna Esquerda: Canais de Contato -->
+                <div class="contact-channels-col">
+                    <span class="section-tag" data-i18n="contact-section-tag">FALE CONOSCO</span>
+                    <h2 class="contact-main-title" data-i18n="contact-title">Pronto para garantir a conformidade da sua operação?</h2>
+                    <p class="contact-main-desc" data-i18n="contact-desc">Nossa equipe está disponível 24/7 para atender suas demandas com agilidade e precisão técnica.</p>
+                    <ul class="contact-card-list">
+                        <li class="contact-card">
+                            <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div class="contact-card-info">
+                                <h3 data-i18n="contact-wpp-title">WhatsApp</h3>
+                                <a href="https://wa.me/5541987809525" target="_blank">+55 (41) 98780-9525</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-card-info">
+                                <h3 data-i18n="contact-email-corp-title">E-mail Corporativo</h3>
+                                <a href="mailto:vagner.ribeiro@swinspection.com.br">vagner.ribeiro@swinspection.com.br</a>
+                            </div>
+                        </li>
+                        <li class="contact-card">
+                            <div class="contact-card-icon"><i class="fa-brands fa-linkedin"></i></div>
+                            <div class="contact-card-info">
+                                <h3 data-i18n="contact-linkedin-corp-title">LinkedIn</h3>
+                                <a href="#" target="_blank">SWI Sea World Inspection</a>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="https://wa.me/5541987809525" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn-whatsapp-footer">Solicitar Inspetor</span></a>
+                </div>
+                <!-- Coluna Direita: Formulário -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form-premium">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contact-name" data-i18n="form-name-label">Nome / Empresa</label>
+                                <input type="text" id="contact-name" data-i18n-placeholder="form-name-ph" placeholder="Ex: Petrobras Trading" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" data-i18n="form-email-label">E-mail</label>
+                                <input type="email" id="contact-email" data-i18n-placeholder="form-email-ph" placeholder="ops@empresa.com" required>
+                            </div>
+                            <div class="form-group form-group-full">
+                                <label for="contact-service" data-i18n="form-service-label">Serviço Desejado</label>
+                                <select id="contact-service" required>
+                                    <option value="" disabled selected data-i18n="form-select-service">Selecione um serviço...</option>
+                                    <option value="Draft Survey" data-i18n="s1-title">Draft Survey</option>
+                                    <option value="Bunker Survey" data-i18n="s2-title">Bunker Survey</option>
+                                    <option value="IHM – Inventory Hazmat Material" data-i18n="s9-title">IHM – Inventory Hazmat Material</option>
+                                    <option value="Outro" data-i18n="form-service-other">Outro (descrever abaixo)</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-group-full">
+                                <label for="contact-message" data-i18n="form-details-label">Detalhes da operação</label>
+                                <textarea id="contact-message" rows="5" data-i18n-placeholder="form-details-ph" placeholder="Descreva brevemente a operação, urgência e o porto de atuação..." required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit-btn" data-i18n="form-submit-btn">Enviar Solicitação</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="current-year">2026</span> SWI Sea World Inspection. <span data-i18n="footer-rights">Todos os direitos reservados.</span></p>
+    </section>
+
+    <!-- NOVO FOOTER (BASEADO EM image_082ea2.png) -->
+    <footer class="footer-premium">
+        <div class="container footer-grid-layout">
+            <!-- Coluna 1: Institucional -->
+            <div class="footer-col">
+                <div class="logo-brand-group">
+                    <div class="logo-icons"><img src="assets/images/logo/logo_azul.png" alt="SWI Icon" class="nav-icon-img"></div>
+                    <div class="brand-text">
+                        <span class="brand-main">SWI</span>
+                        <span class="brand-sub">SEA WORLD INSPECTION</span>
+                    </div>
+                </div>
+                <p class="footer-desc" data-i18n="footer-tagline">Precisão técnica, independência pericial e compromisso com a conformidade global.</p>
+            </div>
+            <!-- Coluna 2: Navegação -->
+            <div class="footer-col">
+                <h3 class="footer-col-title" data-i18n="footer-nav-title">Navegação</h3>
+                <ul class="footer-link-list">
+                    <li><a href="#servicos" data-i18n="footer-nav-services">Serviços</a></li>
+                    <li><a href="#sobre" data-i18n="footer-nav-about">Sobre Nós</a></li>
+                    <li><a href="#cobertura" data-i18n="footer-nav-coverage">Cobertura</a></li>
+                    <li><a href="#contato" data-i18n="footer-nav-contact">Contato</a></li>
+                </ul>
+            </div>
+            <!-- Coluna 3: Contato -->
+            <div class="footer-col">
+                <h3 class="footer-col-title" data-i18n="footer-contact-title">Contato</h3>
+                <ul class="footer-icon-list">
+                    <li><i class="fa-solid fa-location-dot"></i><span data-i18n="footer-address">São José dos Pinhais, PR, Brasil</span></li>
+                    <li><i class="fa-solid fa-envelope"></i><span data-i18n="footer-email">vagner.ribeiro@swinspection.com.br</span></li>
+                </ul>
+            </div>
+            <!-- Coluna 4: CTA Urgente -->
+            <div class="footer-col">
+                <a href="https://wa.me/5541987809525" target="_blank" class="footer-cta-card">
+                    <div class="cta-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="cta-text">
+                        <strong data-i18n="footer-cta-title">Solicitar Vistoria Urgente</strong>
+                        <span data-i18n="footer-cta-desc">Disponível 24h via WhatsApp</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year"></span> SWI – Sea World Inspection. Todos os direitos reservados.</p>
+                <p class="dev-credit" data-i18n="footer-dev-credit">Desenvolvido com precisão técnica para o mercado marítimo global.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <a href="#" id="back-to-top-btn" class="back-to-top-btn" title="Voltar ao Topo"><i class="fa-solid fa-arrow-up"></i></a>
 
     <script src="script.js"></script>
 </body>

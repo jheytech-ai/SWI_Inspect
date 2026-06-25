@@ -15,9 +15,11 @@ const translations = {
         "certs-section-tag": "CERTIFICAÇÕES INTERNACIONAIS RECONHECIDAS",
         "cert-ukata-bold": "Asbestos Awareness E-Learning",
         "cert-ukata-desc": "Conformidade com a Regulação 10 do Control of Asbestos Regulations e diretrizes L143 para mapeamento e gestão de amianto.",
+        "cert-ukata-title": "UKATA",
         "cert-ukata-badge": "ID: 2625649 | Certificação Internacional",
         "cert-dnv-bold": "HazMat Training LITE",
         "cert-dnv-desc": "Qualificação técnica oficial para o desenvolvimento de Inventários de Materiais Perigosos (IHM) e Visual Sampling Plans conforme regras da UE.",
+        "cert-dnv-title": "DNV GL",
         "cert-dnv-badge": "ID: 3437995 | Norma IMO",
         
         "services-main-title": "Soluções técnicas para toda a cadeia marítima",
@@ -58,6 +60,22 @@ const translations = {
         "coverage-tag": "ÁREA DE ATUAÇÃO",
         "coverage-main-title": "Presença nos principais portos brasileiros e internacionais",
         "coverage-main-subtitle": "Mobilização rápida para garantir que nenhuma operação seja interrompida por falta de vistoria técnica.",
+        "port-santos": "Santos – SP",
+        "port-rio": "Rio de Janeiro – RJ",
+        "port-paranagua": "Paranaguá – PR",
+        "port-itajai": "Itajaí – SC",
+        "port-poa": "Porto Alegre – RS",
+        "port-salvador": "Salvador – BA",
+        "port-suape": "Suape – PE",
+        "port-manaus": "Manaus – AM",
+        "port-macae": "Macaé – RJ",
+        "port-vitoria": "Vitória – ES",
+        "port-saoseba": "São Sebastião – SP",
+        "port-aratu": "Aratu – BA",
+        "port-buenosaires": "Buenos Aires – AR",
+        "port-montevideo": "Montevidéu – UY",
+        "port-rotterdam": "Roterdã – NL",
+        "port-mombasa": "Mombasa – KE",
 
         "mvv-m-title": "MISSÃO",
         "mvv-m-desc": "Prover inteligência pericial de alta precisão nas operações marítimas, mitigando perdas e assegurando total conformidade regulatória para nossos parceiros globais.",
@@ -84,10 +102,35 @@ const translations = {
         "why-bullet4": "Relatórios em inglês e português para uso global",
         "why-bullet5": "Independência pericial — sem vínculo com operadores",
 
-        "footer-brand-desc": "Soluções periciais de engenharia naval e conformidade ambiental regulatória.",
-        "footer-contact-title": "Canais de Atendimento",
-        "btn-whatsapp-footer": "Solicitar Inspetor",
-        "footer-rights": "Todos os direitos reservados."
+        "contact-section-tag": "FALE CONOSCO",
+        "contact-title": "Pronto para garantir a conformidade da sua operação?",
+        "contact-desc": "Nossa equipe está disponível 24/7 para atender suas demandas com agilidade e precisão técnica.",
+        "contact-wpp-title": "WhatsApp",
+        "contact-email-corp-title": "E-mail Corporativo",
+        "contact-linkedin-corp-title": "LinkedIn",
+        "form-name-label": "Nome / Empresa",
+        "form-name-ph": "Ex: Petrobras Trading",
+        "form-email-label": "E-mail",
+        "form-email-ph": "ops@empresa.com",
+        "form-service-label": "Serviço Desejado",
+        "form-select-service": "Selecione um serviço...",
+        "form-service-other": "Outro (descrever abaixo)",
+        "form-details-label": "Detalhes da operação",
+        "form-details-ph": "Descreva brevemente a operação, urgência e o porto de atuação...",
+        "form-submit-btn": "Enviar Solicitação",
+        "footer-tagline": "Precisão técnica, independência pericial e compromisso com a conformidade global.",
+        "footer-nav-title": "Navegação",
+        "footer-nav-services": "Serviços",
+        "footer-nav-about": "Sobre Nós",
+        "footer-nav-coverage": "Cobertura",
+        "footer-nav-contact": "Contato",
+        "footer-contact-title": "Contato",
+        "footer-address": "São José dos Pinhais, PR, Brasil",
+        "footer-email": "vagner.ribeiro@swinspection.com.br",
+        "footer-cta-title": "Solicitar Vistoria Urgente",
+        "footer-cta-desc": "Disponível 24h via WhatsApp",
+        "footer-rights": "Todos os direitos reservados.",
+        "footer-dev-credit": "Desenvolvido com precisão técnica para o mercado marítimo global."
     },
     en: {
         "page-title": "SWI - Sea World Inspection | Marine Surveys & IHM",
@@ -104,9 +147,11 @@ const translations = {
         "certs-section-tag": "RECOGNIZED INTERNATIONAL CERTIFICATIONS",
         "cert-ukata-bold": "Asbestos Awareness E-Learning",
         "cert-ukata-desc": "Compliance with Regulation 10 of the Control of Asbestos Regulations and L143 guidelines for mapping and asbestos management.",
+        "cert-ukata-title": "UKATA",
         "cert-ukata-badge": "ID: 2625649 | International Certification",
         "cert-dnv-bold": "HazMat Training LITE",
         "cert-dnv-desc": "Official technical qualification for developing Inventories of Hazardous Materials (IHM) and Visual Sampling Plans under EU laws.",
+        "cert-dnv-title": "DNV GL",
         "cert-dnv-badge": "ID: 3437995 | IMO Standard",
         
         "services-main-title": "Technical solutions for the entire maritime chain",
@@ -147,6 +192,22 @@ const translations = {
         "coverage-tag": "OPERATIONAL RANGE",
         "coverage-main-title": "Presence across major Brazilian and international ports",
         "coverage-main-subtitle": "Fast mobilization to ensure that no operation is halted due to a lack of technical surveying expertise.",
+        "port-santos": "Santos – SP",
+        "port-rio": "Rio de Janeiro – RJ",
+        "port-paranagua": "Paranaguá – PR",
+        "port-itajai": "Itajaí – SC",
+        "port-poa": "Porto Alegre – RS",
+        "port-salvador": "Salvador – BA",
+        "port-suape": "Suape – PE",
+        "port-manaus": "Manaus – AM",
+        "port-macae": "Macaé – RJ",
+        "port-vitoria": "Vitória – ES",
+        "port-saoseba": "São Sebastião – SP",
+        "port-aratu": "Aratu – BA",
+        "port-buenosaires": "Buenos Aires – AR",
+        "port-montevideo": "Montevideo – UY",
+        "port-rotterdam": "Rotterdam – NL",
+        "port-mombasa": "Mombasa – KE",
 
         "mvv-m-title": "MISSION",
         "mvv-m-desc": "To provide high-precision pericial intelligence in maritime operations, mitigating losses and ensuring complete regulatory compliance for our global partners.",
@@ -173,39 +234,191 @@ const translations = {
         "why-bullet4": "Reports available in English and Portuguese for global use",
         "why-bullet5": "Independent marine surveying — no links to terminal operators",
 
-        "footer-brand-desc": "Marine engineering surveying solutions and environmental regulatory compliance.",
-        "footer-contact-title": "Customer Service",
-        "btn-whatsapp-footer": "Request Inspector",
-        "footer-rights": "All rights reserved."
+        "contact-section-tag": "CONTACT US",
+        "contact-title": "Ready to ensure your operation's compliance?",
+        "contact-desc": "Our team is available 24/7 to meet your demands with agility and technical precision.",
+        "contact-wpp-title": "WhatsApp",
+        "contact-email-corp-title": "Corporate E-mail",
+        "contact-linkedin-corp-title": "LinkedIn",
+        "form-name-label": "Name / Company",
+        "form-name-ph": "Ex: Global Trading Co.",
+        "form-email-label": "E-mail",
+        "form-email-ph": "ops@company.com",
+        "form-service-label": "Desired Service",
+        "form-select-service": "Select a service...",
+        "form-service-other": "Other (describe below)",
+        "form-details-label": "Operation Details",
+        "form-details-ph": "Briefly describe the operation, urgency, and port of operation...",
+        "form-submit-btn": "Send Request",
+        "footer-tagline": "Technical precision, surveying independence, and commitment to global compliance.",
+        "footer-nav-title": "Navigation",
+        "footer-nav-services": "Services",
+        "footer-nav-about": "About Us",
+        "footer-nav-coverage": "Coverage",
+        "footer-nav-contact": "Contact",
+        "footer-contact-title": "Contact",
+        "footer-address": "São José dos Pinhais, PR, Brazil",
+        "footer-email": "vagner.ribeiro@swinspection.com.br",
+        "footer-cta-title": "Request Urgent Survey",
+        "footer-cta-desc": "Available 24/7 via WhatsApp",
+        "footer-rights": "All rights reserved.",
+        "footer-dev-credit": "Developed with technical precision for the global maritime market."
     }
 };
-
-const langToggleBtn = document.getElementById('lang-toggle-btn');
-const themeToggle = document.getElementById('theme-toggle');
 
 function setLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[lang][key]) el.innerHTML = translations[lang][key];
     });
+
+    // Atualiza placeholders de formulários
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+    });
     document.title = translations[lang]['page-title'];
-    langToggleBtn.textContent = lang === 'pt' ? 'EN' : 'PT';
+
+    // Define a URL da bandeira do PRÓXIMO idioma a ser exibido
+    const nextLangFlagUrl = lang === 'pt' 
+        ? 'https://inspe.com.br/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.svg' 
+        : 'https://inspe.com.br/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-br.svg';
+
+    document.querySelectorAll('[id^="lang-icon-container"]').forEach(container => {
+        container.innerHTML = `<img src="${nextLangFlagUrl}" alt="Mudar idioma" style="width: 24px; height: auto; border-radius: 3px;">`;
+    });
     localStorage.setItem('swi-lang', lang);
+    document.documentElement.lang = lang.toUpperCase();
 }
 
-langToggleBtn.addEventListener('click', () => {
-    const nextLang = localStorage.getItem('swi-lang') === 'pt' ? 'en' : 'pt';
-    setLanguage(nextLang);
-});
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('swi-theme', theme);
 
-themeToggle.addEventListener('click', () => {
-    const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('swi-theme', newTheme);
-});
+    // Usa o ícone de imagem fornecido pelo usuário
+    const iconUrl = "https://cdn-icons-png.flaticon.com/512/12377/12377255.png";
+    document.querySelectorAll('[id^="theme-icon-container"]').forEach(container => {
+        container.innerHTML = `<img src="${iconUrl}" alt="Alternar Tema" style="width: 22px; height: 22px;">`;
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
-    setLanguage(localStorage.getItem('swi-lang') || 'pt');
-    document.documentElement.setAttribute('data-theme', localStorage.getItem('swi-theme') || 'dark');
+    const initialLang = localStorage.getItem('swi-lang') || 'pt';
+    const initialTheme = localStorage.getItem('swi-theme') || 'dark';
+    setLanguage(initialLang);
+    setTheme(initialTheme);
     document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // LÓGICA DO MENU LATERAL (DRAWER)
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const drawer = document.getElementById('mobile-drawer');
+    const closeBtn = document.getElementById('drawer-close-btn');
+    const overlay = document.getElementById('drawer-overlay');
+    const drawerNavLinksContainer = document.querySelector('.drawer-nav-links');
+    const drawerControlsContainer = document.querySelector('.drawer-controls');
+
+    // Clona os links e controles para dentro do drawer
+    const desktopNavLinks = document.querySelector('.nav-links').cloneNode(true);
+    const desktopControls = document.querySelector('.nav-controls').cloneNode(true);
+    
+    // Ajusta IDs para evitar duplicatas
+    desktopControls.querySelector('#lang-toggle-btn-desktop').id = 'lang-toggle-btn-mobile';
+    desktopControls.querySelector('#theme-toggle-desktop').id = 'theme-toggle-mobile';
+    desktopControls.querySelector('#lang-icon-container-desktop').id = 'lang-icon-container-mobile';
+    desktopControls.querySelector('#theme-icon-container-desktop').id = 'theme-icon-container-mobile';
+
+    drawerNavLinksContainer.appendChild(desktopNavLinks);
+    drawerControlsContainer.appendChild(desktopControls);
+
+    const openDrawer = () => {
+        drawer.classList.add('open');
+        overlay.classList.add('open');
+    };
+
+    const closeDrawer = () => {
+        drawer.classList.remove('open');
+        overlay.classList.remove('open');
+    };
+
+    hamburgerBtn.addEventListener('click', openDrawer);
+    closeBtn.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
+    drawer.querySelectorAll('a').forEach(link => link.addEventListener('click', closeDrawer));
+
+    // Aplica os eventos aos botões clonados e aos originais
+    document.querySelectorAll('[id^="lang-toggle-btn"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const nextLang = localStorage.getItem('swi-lang') === 'pt' ? 'en' : 'pt';
+            setLanguage(nextLang);
+        });
+    });
+    document.querySelectorAll('[id^="theme-toggle"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+    });
+    // Fim da lógica do Drawer
+
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const service = document.getElementById('contact-service').value;
+            const message = document.getElementById('contact-message').value;
+
+            const mailtoSubject = `Solicitação de Serviço via Site: ${service} - ${name}`;
+            const mailtoBody = `Uma nova solicitação de serviço foi enviada através do site.\n\n--------------------------------------------------\n\n- Nome/Empresa: ${name}\n- E-mail: ${email}\n- Serviço Desejado: ${service}\n\n- Detalhes da Operação:\n${message}\n\n--------------------------------------------------`;
+
+            const mailtoLink = `mailto:operacoes@seaworldinspection.com?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`;
+            window.location.href = mailtoLink;
+        });
+    }
+
+    // BOTÃO VOLTAR AO TOPO
+    const backToTopBtn = document.getElementById('back-to-top-btn');
+
+    // Mostra ou esconde o botão
+    const scrollFunction = () => {
+        if (!backToTopBtn) return;
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    };
+
+    window.addEventListener('scroll', scrollFunction);
+
+    if (backToTopBtn) {
+        // Rolagem suave para o topo ao clicar
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+
+// LÓGICA DO PRELOADER
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader-wrapper');
+    if (loader) {
+        // Adiciona a classe para iniciar a animação de saída após 1 segundo
+        setTimeout(() => {
+            if (loader) loader.classList.add('loader-finish');
+        }, 1000);
+
+        // Remove o elemento do DOM após a animação de saída terminar (1s + 0.7s)
+        setTimeout(() => {
+            loader.remove();
+        }, 1700);
+    }
 });
