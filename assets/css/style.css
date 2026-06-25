@@ -232,7 +232,7 @@ body {
     left: 0;
     width: 100%;
     height: calc(100% + 74px); /* Altura total do hero + altura da navbar */
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.9) 100%), url('../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.9) 100%), url('../../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1; /* Coloca o fundo atrás do conteúdo do hero */
@@ -241,7 +241,7 @@ body {
 /* Ajusta o Hero para o tema claro */
 [data-theme="light"] .hero::before {
     /* Sobreposição clara para o tema claro */
-    background-image: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(248, 250, 252, 0.95) 100%), url('../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(248, 250, 252, 0.95) 100%), url('../../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
 }
 
 [data-theme="light"] .hero h1,
