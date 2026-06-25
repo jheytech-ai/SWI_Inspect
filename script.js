@@ -306,7 +306,13 @@ function setTheme(theme) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const initialLang = localStorage.getItem('swi-lang') || 'pt';
-    const initialTheme = localStorage.getItem('swi-theme') || 'dark';
+    
+    // Verifica se há um tema salvo; se não, usa a preferência do sistema do usuário
+    let initialTheme = localStorage.getItem('swi-theme');
+    if (!initialTheme) {
+        initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
     setLanguage(initialLang);
     setTheme(initialTheme);
     document.getElementById('current-year').textContent = new Date().getFullYear();
