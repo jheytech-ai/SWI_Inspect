@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWI - Sea World Inspection</title>
+    <title data-i18n="page-title">SWI - Sea World Inspection | Vistorias Marítimas e IHM</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Font Awesome para Ícones Profissionais (Sem Emojis) -->
+    <!-- Font Awesome Pro para Ícones Institucionais -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
+    <!-- Google Fonts Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR PREMIUM INTEGRADA -->
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo-area">
-                <img src="assets/images/logo/SWI (1).png" alt="SWI Sea World Inspection" class="nav-logo">
+            <!-- Grupo de Identidade: Ícone + Textos Alinhados Lateralmente -->
+            <div class="logo-brand-group">
+                <div class="logo-icons">
+                    <img src="assets/images/logo/Design sem nome (3).png" alt="SWI Icon" class="nav-icon-img dark-logo">
+                    <img src="assets/images/logo/SWI (4).jpg" alt="SWI Icon" class="nav-icon-img light-logo">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-main">SWI</span>
+                    <span class="brand-sub">SEA WORLD INSPECTION</span>
+                </div>
             </div>
             
-            <nav id="nav-menu" class="nav-links">
-                <a href="#sobre"><span data-i18n="nav-about">Quem Somos</span></a>
-                <a href="#servicos"><span data-i18n="nav-services">Serviços</span></a>
-                <a href="#certificacoes"><span data-i18n="nav-certs">Certificações</span></a>
-                <a href="#contato" class="btn-nav-cta"><span data-i18n="nav-cta">Solicitar Vistoria</span></a>
+            <!-- Grupo Funcional: Links e Controles em Caixa -->
+            <div class="nav-right-side">
+                <nav class="nav-links">
+                    <a href="#servicos"><span data-i18n="nav-services">SERVIÇOS</span></a>
+                    <a href="#sobre"><span data-i18n="nav-about">SOBRE</span></a>
+                    <a href="#cobertura"><span data-i18n="nav-coverage">COBERTURA</span></a>
+                    <a href="#contato"><span data-i18n="nav-contact">CONTATO</span></a>
+                </nav>
 
-                <!-- CONTROLES DE IDIOMA E TEMA (MOVIMOS PARA DENTRO DA NAV) -->
-                <div class="controls">
-                    <button id="theme-toggle" class="control-btn" title="Alternar Tema">
-                        <i class="fa-solid fa-sun"></i>
+                <div class="nav-controls">
+                    <button id="lang-toggle-btn" class="box-btn">EN</button>
+                    <button id="theme-toggle" class="box-btn" title="Alternar Tema">
+                        <i class="fa-solid fa-gear"></i>
                     </button>
-                    <div class="lang-switcher">
-                        <button class="lang-btn active" data-lang="pt">PT</button>
-                        <button class="lang-btn" data-lang="en">EN</button>
-                    </div>
                 </div>
-            </nav>
-
-            <button id="menu-toggle" class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </div>
     </header>
 
@@ -56,113 +61,333 @@
         </div>
     </section>
 
-    <!-- CERTIFICAÇÕES -->
+    <!-- CERTIFICAÇÕES INTERNACIONAIS -->
     <section id="certificacoes" class="certificacoes">
         <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-shield-halved"></i> <span data-i18n="certs-title">Credenciais e Certificações Internacionais</span></h2>
-            <p class="section-subtitle" data-i18n="certs-subtitle">Qualificações técnicas de alto padrão que posicionam a SWI no mercado global.</p>
+            <span class="section-tag tag-gold" data-i18n="certs-section-tag">CERTIFICAÇÕES INTERNACIONAIS RECONHECIDAS</span>
             
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon-box"><i class="fa-solid fa-award"></i></div>
-                    <h3 data-i18n="cert-dnv-title">Certificação DNV GL</h3>
-                    <p data-i18n="cert-dnv-desc"><strong>HazMat Training LITE</strong> Qualificação técnica oficial para o desenvolvimento e elaboração do Inventário de Materiais Perigosos (IHM) em total conformidade com a Regulamentação de Reciclagem de Navios da União Europeia.</p>
+            <div class="cert-premium-grid">
+                <!-- Card UKATA -->
+                <div class="cert-premium-card">
+                    <div class="cert-card-left">
+                        <div class="cert-premium-icon-box"><i class="fa-solid fa-award"></i></div>
+                    </div>
+                    <div class="cert-card-right">
+                        <h3 class="cert-premium-title">UKATA</h3>
+                        <p class="cert-premium-text">
+                            <strong data-i18n="cert-ukata-bold">Asbestos Awareness E-Learning</strong> — <span data-i18n="cert-ukata-desc">Conformidade com a Regulação 10 do Control of Asbestos Regulations e diretrizes L143 para mapeamento e gestão de amianto.</span>
+                        </p>
+                        <span class="cert-premium-badge" data-i18n="cert-ukata-badge">ID: 2625649 | Certificação Internacional</span>
+                    </div>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon-box"><i class="fa-solid fa-passport"></i></div>
-                    <h3 data-i18n="cert-ukata-title">Certificação UKATA</h3>
-                    <p data-i18n="cert-ukata-desc"><strong>Asbestos Awareness</strong>. Especialização internacional voltada para a identificação, mapeamento e gerenciamento seguro de amianto em estruturas navais, atendendo à Regulação 10 do Control of Asbestos Regulations.</p>
+
+                <!-- Card DNV GL -->
+                <div class="cert-premium-card">
+                    <div class="cert-card-left">
+                        <div class="cert-premium-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                    </div>
+                    <div class="cert-card-right">
+                        <h3 class="cert-premium-title">DNV GL</h3>
+                        <p class="cert-premium-text">
+                            <strong data-i18n="cert-dnv-bold">HazMat Training LITE</strong> — <span data-i18n="cert-dnv-desc">Qualificação técnica oficial para o desenvolvimento de Inventários de Materiais Perigosos (IHM) e Visual Sampling Plans conforme regras da UE.</span>
+                        </p>
+                        <span class="cert-premium-badge" data-i18n="cert-dnv-badge">ID: 3437995 | Norma IMO</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVIÇOS -->
+    <!-- MATRIZ DE SERVIÇOS CONSULTIVOS -->
     <section id="servicos" class="servicos">
         <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-list-check"></i> <span data-i18n="services-title">Serviços Periciais Especializados</span></h2>
-            <p class="section-subtitle" data-i18n="services-subtitle">Atuação analítica e imparcial para a completa mitigação de riscos operacionais.</p>
+            <div class="services-main-header">
+                <h2 class="services-main-title" data-i18n="services-main-title">Soluções técnicas para toda a cadeia marítima</h2>
+                <p class="services-main-subtitle" data-i18n="services-main-subtitle">12 frentes de serviço organizadas em categorias especializadas para atender às exigências regulatórias internacionais.</p>
+            </div>
             
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-card-header">
-                        <i class="fa-solid fa-gas-pump"></i>
+            <div class="services-premium-grid">
+                <!-- CATEGORIA 1: EFICIÊNCIA & COMBUSTÍVEL -->
+                <div class="service-category-card">
+                    <div class="category-card-top">
+                        <div class="category-icon-wrapper"><i class="fa-solid fa-droplet"></i></div>
                         <h3 data-i18n="cat1-title">Eficiência & Combustível</h3>
+                        <p data-i18n="cat1-desc">Controle técnico rigoroso para operações de bunkering e movimentação de granéis líquidos</p>
                     </div>
-                    <ul>
-                        <li><i class="fa-solid fa-chevron-right"></i> Draft Survey</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Bunker Survey</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Bunker Detective</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Loss Control</li>
-                    </ul>
+                    <div class="category-items-list">
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-water"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s1-title">Draft Survey</h4>
+                                <p data-i18n="s1-desc">Medição de calado para apuração de quantidade de carga</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-gas-pump"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s2-title">Bunker Survey</h4>
+                                <p data-i18n="s2-desc">Fiscalização e controle de operações de abastecimento</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s3-title">Bunker Detective</h4>
+                                <p data-i18n="s3-desc">Investigação de discrepâncias e adulterações em bunkering</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s4-title">Loss Control</h4>
+                                <p data-i18n="s4-desc">Identificação e prevenção de perdas em operações logísticas</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-card-header">
-                        <i class="fa-solid fa-ship"></i>
+                <!-- CATEGORIA 2: CARGA & INTEGRIDADE -->
+                <div class="service-category-card">
+                    <div class="category-card-top">
+                        <div class="category-icon-wrapper"><i class="fa-solid fa-ship"></i></div>
                         <h3 data-i18n="cat2-title">Carga & Integridade</h3>
+                        <p data-i18n="cat2-desc">Garantia de conformidade estrutural e segurança operacional da carga transportada</p>
                     </div>
-                    <ul>
-                        <li><i class="fa-solid fa-chevron-right"></i> Hold Condition Survey</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Pre Loading Survey</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Cargo Survey</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Hose Test</li>
-                    </ul>
+                    <div class="category-items-list">
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-anchor"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s5-title">Hold Condition Survey</h4>
+                                <p data-i18n="s5-desc">Inspeção de porões e estruturas de carga antes do embarque</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-cubes"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s6-title">Pre Loading Survey</h4>
+                                <p data-i18n="s6-desc">Verificação técnica prévia ao carregamento de mercadorias</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-file-invoice"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s7-title">Cargo Survey</h4>
+                                <p data-i18n="s7-desc">Vistoria completa da carga para fins de seguro e responsabilidade</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-bore-hole"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s8-title">Hose Test</h4>
+                                <p data-i18n="s8-desc">Teste de estanqueidade de mangueiras e conexões de transferência</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-card-header">
-                        <i class="fa-solid fa-file-contract"></i>
+                <!-- CATEGORIA 3: CONTRATOS & MEIO AMBIENTE -->
+                <div class="service-category-card">
+                    <div class="category-card-top">
+                        <div class="category-icon-wrapper"><i class="fa-solid fa-leaf"></i></div>
                         <h3 data-i18n="cat3-title">Contratos & Meio Ambiente</h3>
+                        <p data-i18n="cat3-desc">Conformidade regulatória e jurídica para proteção das partes em contratos de afretamento</p>
                     </div>
-                    <ul>
-                        <li><i class="fa-solid fa-chevron-right"></i> IHM – Inventory Hazmat Material</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> On/Off Hire Survey</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Condition Survey</li>
-                        <li><i class="fa-solid fa-chevron-right"></i> Pre-Purchase Inspection</li>
-                    </ul>
+                    <div class="category-items-list">
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s9-title">IHM – Inventory Hazmat Material</h4>
+                                <p data-i18n="s9-desc">Inventário de materiais perigosos a bordo conforme IMO</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-file-signature"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s10-title">On/Off Hire Survey</h4>
+                                <p data-i18n="s10-desc">Inspeção de condição no início e fim de contrato de afretamento</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s11-title">Condition Survey</h4>
+                                <p data-i18n="s11-desc">Avaliação geral do estado técnico e estrutural da embarcação</p>
+                            </div>
+                        </div>
+                        <div class="service-inline-item">
+                            <div class="item-icon-box"><i class="fa-solid fa-handshake-angle"></i></div>
+                            <div class="item-info-content">
+                                <h4 data-i18n="s12-title">Pre-Purchase Inspection</h4>
+                                <p data-i18n="s12-desc">Due diligence técnica antes da aquisição de embarcações</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="sobre">
+    <!-- COBERTURA (GRELHA DE 16 PORTOS) -->
+    <section id="cobertura" class="cobertura">
         <div class="container">
-            <h2 class="section-title"><i class="fa-solid fa-building-shield"></i> <span data-i18n="about-title">Sobre a SWI Sea World Inspection</span></h2>
-            <div class="sobre-content">
-                <p data-i18n="about-p1">Sob a direção do inspetor técnico <strong>Vagner Ribeiro</strong>, a SWI consolida sólida bagagem prática em vistorias navais e perícias operacionais portuárias. Nosso compromisso fundamental é emitir laudos técnicos de alta confiabilidade, precisão e total isenção jurídica, protegendo os ativos de nossos clientes.</p>
-                <p data-i18n="about-p2">Com qualificações obtidas junto a autoridades marítimas globais de prestígio (como a DNV GL nas sedes de Hamburgo e Singapura), oferecemos respostas ágeis e atendimento focado na estrita conformidade técnica exigida internacionalmente.</p>
+            <div class="coverage-main-header">
+                <span class="section-tag" data-i18n="coverage-tag">ÁREA DE ATUAÇÃO</span>
+                <h2 class="coverage-main-title" data-i18n="coverage-main-title">Presença nos principais portos brasileiros e internacionais</h2>
+                <p class="coverage-main-subtitle" data-i18n="coverage-main-subtitle">Mobilização rápida para garantir que nenhuma operação seja interrompida por falta de vistoria técnica.</p>
+            </div>
+
+            <div class="ports-premium-grid">
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Santos – SP</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Rio de Janeiro – RJ</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Paranaguá – PR</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Itajaí – SC</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Porto Alegre – RS</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Salvador – BA</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Suape – PE</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Manaus – AM</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Macaé – RJ</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Vitória – ES</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>São Sebastião – SP</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Aratu – BA</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Buenos Aires – AR</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Montevidéu – UY</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Roterdã – NL</span></div>
+                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span>Mombasa – KE</span></div>
             </div>
         </div>
     </section>
 
-   <footer id="contato" class="footer">
-        <div class="container footer-grid">
-            
-            <div class="footer-left">
-                <img src="assets/images/logo/SWI.png" alt="SWI Logo" class="footer-logo">
+    <!-- SEÇÃO INSTITUCIONAL COM MANIFESTO E FAiXA DE CARDS INFERIORES HORIZONTAIS -->
+    <section id="sobre" class="sobre-corporativa">
+        <div class="sobre-upper-darkband">
+            <div class="container relative-container">
+                <div class="mvv-floating-grid">
+                    <div class="mvv-card">
+                        <div class="mvv-icon"><i class="fa-solid fa-flag"></i></div>
+                        <h3 data-i18n="mvv-m-title">MISSÃO</h3>
+                        <p data-i18n="mvv-m-desc">Prover inteligência pericial de alta precisão nas operações marítimas, mitigando perdas e assegurando total conformidade regulatória para nossos parceiros globais.</p>
+                    </div>
+                    <div class="mvv-card">
+                        <div class="mvv-icon"><i class="fa-solid fa-compass"></i></div>
+                        <h3 data-i18n="mvv-v-title">VISÃO</h3>
+                        <p data-i18n="mvv-v-desc">Consolidar-se como a principal referência independente em auditorias navais e laudos IHM de alta complexidade nos principais complexos portuários nacionais.</p>
+                    </div>
+                    <div class="mvv-card">
+                        <div class="mvv-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <h3 data-i18n="mvv-val-title">VALORES</h3>
+                        <p data-i18n="mvv-val-desc">Isenção técnica absoluta, precisão matemática irretocável, agilidade operacional de pronta resposta e estrito compromisso socioambiental.</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="footer-right">
-                <div class="footer-brand-desc">
-                    <p data-i18n="footer-brand-desc">Soluções periciais de engenharia naval e conformidade ambiental regulatória.</p>
+        </div>
+
+        <div class="sobre-lower-content">
+            <div class="container content-about-grid">
+                
+                <!-- COLUNA ESQUERDA: IMAGEM + METRICAS (CONFORME DESIGN INTERNO ENVIADO) -->
+                <div class="about-left-column">
+                    <div class="about-image-box">
+                        <img src="assets/images/fundo/cargo-ship-sailing-ocean.jpg" alt="SWI Container Ship" class="about-normal-img">
+                    </div>
+                    
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <div class="stat-icon-wrapper"><i class="fa-solid fa-ship"></i></div>
+                                <span class="stat-number">2.000+</span>
+                            </div>
+                            <p class="stat-label" data-i18n="stat-surveys">VISTORIAS REALIZADAS</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <div class="stat-icon-wrapper"><i class="fa-solid fa-anchor"></i></div>
+                                <span class="stat-number">16+</span>
+                            </div>
+                            <p class="stat-label" data-i18n="stat-ports">PORTOS ATENDIDOS</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <div class="stat-icon-wrapper"><i class="fa-solid fa-timeline"></i></div>
+                                <span class="stat-number">10+</span>
+                            </div>
+                            <p class="stat-label" data-i18n="stat-years">ANOS DE MERCADO</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-header">
+                                <div class="stat-icon-wrapper"><i class="fa-solid fa-award"></i></div>
+                                <span class="stat-number">2</span>
+                            </div>
+                            <p class="stat-label" data-i18n="stat-certs">CERTIFICAÇÕES INT'L</p>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="footer-contacts">
+                <!-- COLUNA DIREITA: CONVERSÃO & TEXTO -->
+                <div class="sobre-text-block">
+                    <span class="section-tag" data-i18n="about-tag" style="text-align: left;">DIREÇÃO TÉCNICA</span>
+                    <h2 class="about-title"><i class="fa-solid fa-building-shield"></i> <span data-i18n="about-title">Sobre a SWI Sea World Inspection</span></h2>
+                    <p class="about-p" data-i18n="about-p1">Sob a direção de <strong>Vagner Ribeiro</strong>, a SWI consolida sólida bagagem prática em vistorias navais e perícias operacionais portuárias. Nosso compromisso é emitir laudos técnicos de alta confiabilidade, precisão e total isenção jurídica, protegendo os ativos de nossos clientes.</p>
+                    <p class="about-p" data-i18n="about-p2">Com qualificações obtidas junto a autoridades marítimas globais como a DNV GL, oferecemos respostas ágeis e atendimento focado na estrita conformidade técnica exigida internacionalmente.</p>
+                    
+                    <hr class="about-divider">
+
+                    <div class="why-swi-header">
+                        <span class="section-tag" data-i18n="why-swi-tag" style="text-align: left;">POR QUE A SWI</span>
+                        <h3 class="why-swi-title" data-i18n="why-swi-title">Credibilidade técnica construída porto a porto</h3>
+                        <p class="why-swi-desc" data-i18n="why-swi-desc1">A SWI - Sea World Inspection é reconhecida no mercado marítimo internacional pela rigorosidade técnica, independência pericial e velocidade de mobilização em principais portos do Brasil e do exterior.</p>
+                        <p class="why-swi-desc" data-i18n="why-swi-desc2">Nossas laudas possuem validade jurídica e são aceitas por seguradoras, tradings e armadores globais. Atuamos com total transparência, sem conflito de interesses.</p>
+                    </div>
+                </div>
+
+                <!-- NOVO POSICIONAMENTO ESTRUTURAL: 5 CARDS HORIZONTAIS NA BASE COMPLETA (IMAGE_F92018.PNG) -->
+                <div class="why-swi-cards-grid">
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-gavel"></i></div>
+                        <p data-i18n="why-bullet1">Laudas com validade jurídica aceitas internacionalmente</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-user-shield"></i></div>
+                        <p data-i18n="why-bullet2">Inspetores certificados UKATA e DNV GL HazMat</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-bolt"></i></div>
+                        <p data-i18n="why-bullet3">Mobilização em menos de 4 hours nos principais portos</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-language"></i></div>
+                        <p data-i18n="why-bullet4">Relatórios em inglês e português para uso global</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon-box"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <p data-i18n="why-bullet5">Independência pericial — sem vínculo com operadores</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER ASSIMÉTRICO PREMIUM -->
+    <footer id="contato" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-left">
+                <img src="assets/images/logo/SWI.png" alt="SWI Full Logo" class="footer-logo">
+            </div>
+            <div class="footer-right">
+                <p class="footer-desc" data-i18n="footer-brand-desc">Soluções periciais de engenharia naval e conformidade ambiental regulatória.</p>
+                <div class="footer-contact-info">
                     <h3><i class="fa-solid fa-headset"></i> <span data-i18n="footer-contact-title">Canais de Atendimento</span></h3>
-                    <ul class="contact-links-list">
-                        <li><i class="fa-solid fa-location-dot"></i> <span>Rua Margarida de Araújo Franco, 1384 - Apt 09<br>São José dos Pinhais - PR, Brasil</span></li>
-                        <li><i class="fa-solid fa-phone"></i> <span>+55 (41) 98780-9525</span></li>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Rua Margarida de Araújo Franco, 1384 - Apt 09 | SJP - PR</li>
+                        <li><i class="fa-solid fa-phone"></i> +55 (41) 98780-9525</li>
                         <li><i class="fa-solid fa-envelope"></i> <a href="mailto:vagner.ribeiro@swinspection.com.br">vagner.ribeiro@swinspection.com.br</a></li>
                     </ul>
-                    <a href="https://wa.me/5541987809525" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn-whatsapp-footer">Solicitar Inspetor no WhatsApp</span></a>
+                    <a href="https://wa.me/5541987809525" target="_blank" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn-whatsapp-footer">Solicitar Inspetor</span></a>
                 </div>
             </div>
-
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SWI Sea World Inspection. <span data-i18n="footer-rights">Todos os direitos reservados.</span></p>
+            <p>&copy; <span id="current-year">2026</span> SWI Sea World Inspection. <span data-i18n="footer-rights">Todos os direitos reservados.</span></p>
         </div>
     </footer>
 
