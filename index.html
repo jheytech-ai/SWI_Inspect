@@ -252,23 +252,35 @@
                 <p class="coverage-main-subtitle" data-i18n="coverage-main-subtitle">Mobilização rápida para garantir que nenhuma operação seja interrompida por falta de vistoria técnica.</p>
             </div>
 
-            <div class="ports-premium-grid">
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-santos">Santos – SP</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-rio">Rio de Janeiro – RJ</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-paranagua">Paranaguá – PR</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-itajai">Itajaí – SC</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-poa">Porto Alegre – RS</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-salvador">Salvador – BA</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-suape">Suape – PE</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-manaus">Manaus – AM</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-macae">Macaé – RJ</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-vitoria">Vitória – ES</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-saoseba">São Sebastião – SP</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-aratu">Aratu – BA</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-buenosaires">Buenos Aires – AR</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-montevideo">Montevidéu – UY</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-rotterdam">Roterdã – NL</span></div>
-                <div class="port-card"><i class="fa-solid fa-location-dot"></i> <span data-i18n="port-mombasa">Mombasa – KE</span></div>
+            <div class="coverage-accordion-grid">
+                <!-- Card Nacional -->
+                <div class="coverage-group accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)"><h4 data-i18n="coverage-national">Nacional</h4><i class="fa-solid fa-plus accordion-icon"></i></div>
+                    <div class="accordion-body ports-grid">
+                        <span data-i18n="port-santos">Santos – SP</span>
+                        <span data-i18n="port-rio">Rio de Janeiro – RJ</span>
+                        <span data-i18n="port-vitoria">Vitória – ES</span>
+                        <span data-i18n="port-macae">Macaé – RJ</span>
+                        <span data-i18n="port-saoseba">São Sebastião – SP</span>
+                        <span data-i18n="port-paranagua">Paranaguá – PR</span>
+                        <span data-i18n="port-itajai">Itajaí – SC</span>
+                        <span data-i18n="port-poa">Porto Alegre – RS</span>
+                        <span data-i18n="port-salvador">Salvador – BA</span>
+                        <span data-i18n="port-suape">Suape – PE</span>
+                        <span data-i18n="port-aratu">Aratu – BA</span>
+                        <span data-i18n="port-manaus">Manaus – AM</span>
+                    </div>
+                </div>
+                <!-- Card Internacional -->
+                <div class="coverage-group accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)"><h4 data-i18n="coverage-international">Internacional</h4><i class="fa-solid fa-plus accordion-icon"></i></div>
+                    <div class="accordion-body ports-grid">
+                        <span data-i18n="port-buenosaires">Buenos Aires – AR</span>
+                        <span data-i18n="port-montevideo">Montevidéu – UY</span>
+                        <span data-i18n="port-rotterdam">Roterdã – NL</span>
+                        <span data-i18n="port-mombasa">Mombasa – KE</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

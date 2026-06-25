@@ -94,7 +94,7 @@ body {
 }
 
 #loader-wrapper img {
-    width: 150px;
+    width: 200px;
     animation: pulse 1.5s infinite ease-in-out;
 }
 
@@ -232,7 +232,7 @@ body {
     left: 0;
     width: 100%;
     height: calc(100% + 74px); /* Altura total do hero + altura da navbar */
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.9) 100%), url('../images/fundo/capa.jpg');
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.9) 100%), url('../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1; /* Coloca o fundo atrás do conteúdo do hero */
@@ -241,7 +241,7 @@ body {
 /* Ajusta o Hero para o tema claro */
 [data-theme="light"] .hero::before {
     /* Sobreposição clara para o tema claro */
-    background-image: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(248, 250, 252, 0.95) 100%), url('../images/fundo/capa.jpg');
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(248, 250, 252, 0.95) 100%), url('../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
 }
 
 [data-theme="light"] .hero h1,
@@ -328,15 +328,49 @@ body {
 .coverage-main-header { text-align: center; max-width: 850px; margin: 0 auto 55px auto; }
 .coverage-main-title { font-size: 2.3rem; font-weight: 800; color: var(--text-heading); letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2; }
 .coverage-main-subtitle { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; max-width: 650px; margin: 0 auto; }
-.ports-premium-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
-.port-card { background-color: var(--services-card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 16px 20px; display: flex; align-items: center; gap: 14px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); transition: all 0.3s ease; }
-.port-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+/* Estilo base para cards colapsáveis (Acordeão) */
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background: transparent;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
-.port-card i { color: #0284c7; font-size: 1.1rem; flex-shrink: 0; }
-[data-theme="dark"] .port-card i { color: var(--services-item-icon-color); }
-.port-card span { font-size: 0.92rem; font-weight: 600; color: var(--text-heading); }
+.accordion-header:hover { background: rgba(255,255,255,0.03); }
+.accordion-header h3, .accordion-header h4 { color: var(--text-heading); font-size: 1.1rem; }
+.cert-premium-card .accordion-header h3 { color: var(--cert-gold); }
+.accordion-icon { color: var(--text-muted); transition: transform 0.4s ease; }
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    background: transparent;
+    padding: 0 25px;
+}
+
+/* Quando estiver aberto */
+.accordion-body.active {
+    max-height: 500px; /* Altura suficiente para o conteúdo */
+    padding: 0 25px 25px 25px;
+}
+
+.cert-premium-card .accordion-body {
+    border-top: 1px solid var(--border);
+}
+.cert-premium-card .accordion-body.active {
+    padding-top: 25px;
+}
+
+.coverage-group { background-color: var(--services-card-bg); border: 1px solid var(--border); border-radius: 8px; }
+
+.coverage-accordion-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.ports-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.ports-grid span { background-color: var(--bg-main); padding: 8px 12px; border-radius: 4px; font-size: 0.9rem; color: var(--text-muted); }
 
 /* INSTITUCIONAL & METRICAS */
 .sobre-corporativa { display: flex; flex-direction: column; background-color: var(--sobre-lower-bg); position: relative; padding-bottom: 100px; transition: background-color 0.3s; }
@@ -441,7 +475,7 @@ body {
 .contact-section { background-color: var(--bg-surface-alt); padding: 100px 0; border-top: 1px solid var(--border); }
 .contact-grid-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: center; }
 .contact-channels-col .section-tag { text-align: left; }
-.contact-main-title { font-size: 2.3rem; font-weight: 800; color: var(--text-heading); margin-bottom: 16px; line-height: 1.2; }
+.contact-main-title { font-size: 1.5rem; font-weight: 800; color: var(--text-heading); margin-bottom: 16px; line-height: 1.2; }
 .contact-main-desc { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 40px; }
 .contact-card-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
 .contact-card { background-color: var(--bg-surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; display: flex; align-items: center; gap: 20px; }
@@ -454,14 +488,14 @@ body {
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .form-group { display: flex; flex-direction: column; }
 .form-group-full { grid-column: 1 / -1; }
-.form-group label { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 8px; }
+.form-group label { font-size: 1.0rem; font-weight: 600; color: var(--text-muted); margin-bottom: 10px; }
 .form-group input, .form-group textarea, .form-group select {
     width: 100%;
     background-color: var(--bg-main);
     border: 1px solid var(--border);
     border-radius: 4px;
-    padding: 12px 14px;
-    font-size: 0.95rem;
+    padding: 15px 14px;
+    font-size: 1.0rem;
     color: var(--text-main);
     transition: border-color 0.2s ease;
 }
@@ -585,8 +619,7 @@ body {
     .contact-grid-layout { gap: 50px; }
     .footer-grid-layout { grid-template-columns: 1fr; gap: 40px; }
     .services-main-title, .coverage-main-title { font-size: 1.8rem; }
-    .services-premium-grid, .cert-premium-grid { grid-template-columns: 1fr; }
-    .ports-premium-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+    .services-premium-grid, .cert-premium-grid, .coverage-accordion-grid { grid-template-columns: 1fr; }
     .mvv-floating-grid { position: static; grid-template-columns: 1fr; margin-top: -80px; padding: 0 10px; }
     .sobre-upper-darkband { height: auto; padding-bottom: 20px; }
     .sobre-lower-content { padding-top: 40px; }
@@ -605,6 +638,6 @@ body {
 @media (max-width: 480px) {
     /* UX Mobile: Ajuste fino de fontes para os menores dispositivos */
     .hero h1 { font-size: 2.0rem; }
-    .services-main-title, .coverage-main-title, .contact-main-title, .about-title, .why-swi-title { font-size: 1.6rem; }
-    .ports-premium-grid, .about-stats-grid { grid-template-columns: 1fr; }
+    .services-main-title, .coverage-main-title, .contact-main-title, .about-title, .why-swi-title { font-size: 1.6rem; } 
+    .about-stats-grid { grid-template-columns: 1fr; }
 }

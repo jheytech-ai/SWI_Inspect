@@ -60,6 +60,8 @@ const translations = {
         "coverage-tag": "ÁREA DE ATUAÇÃO",
         "coverage-main-title": "Presença nos principais portos brasileiros e internacionais",
         "coverage-main-subtitle": "Mobilização rápida para garantir que nenhuma operação seja interrompida por falta de vistoria técnica.",
+        "coverage-national": "Nacional",
+        "coverage-international": "Internacional",
         "port-santos": "Santos – SP",
         "port-rio": "Rio de Janeiro – RJ",
         "port-paranagua": "Paranaguá – PR",
@@ -192,6 +194,8 @@ const translations = {
         "coverage-tag": "OPERATIONAL RANGE",
         "coverage-main-title": "Presence across major Brazilian and international ports",
         "coverage-main-subtitle": "Fast mobilization to ensure that no operation is halted due to a lack of technical surveying expertise.",
+        "coverage-national": "National",
+        "coverage-international": "International",
         "port-santos": "Santos – SP",
         "port-rio": "Rio de Janeiro – RJ",
         "port-paranagua": "Paranaguá – PR",
@@ -428,3 +432,24 @@ window.addEventListener('load', () => {
         }, 1700);
     }
 });
+
+function toggleAccordion(element) {
+    const body = element.nextElementSibling;
+    const icon = element.querySelector('.accordion-icon');
+
+    // Verifica se o item clicado já está ativo
+    const wasActive = body.classList.contains('active');
+
+    // Fecha todos os acordeões abertos
+    document.querySelectorAll('.accordion-body.active').forEach(activeBody => {
+        activeBody.classList.remove('active');
+        const otherIcon = activeBody.previousElementSibling.querySelector('.accordion-icon');
+        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+    });
+
+    // Se o item clicado não estava ativo, ele é aberto
+    if (!wasActive) {
+        body.classList.add('active');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+    }
+}
