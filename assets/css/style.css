@@ -232,7 +232,7 @@ body {
     left: 0;
     width: 100%;
     height: calc(100% + 74px); /* Altura total do hero + altura da navbar */
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.9) 100%), url('../../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.9) 100%), url('../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1; /* Coloca o fundo atrás do conteúdo do hero */
@@ -241,7 +241,7 @@ body {
 /* Ajusta o Hero para o tema claro */
 [data-theme="light"] .hero::before {
     /* Sobreposição clara para o tema claro */
-    background-image: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(248, 250, 252, 0.95) 100%), url('../../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(248, 250, 252, 0.95) 100%), url('../images/fundo/shipping-industry-carrying-cargo-nautical-ship-generative-ai.jpg');
 }
 
 [data-theme="light"] .hero h1,
@@ -329,48 +329,30 @@ body {
 .coverage-main-title { font-size: 2.3rem; font-weight: 800; color: var(--text-heading); letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2; }
 .coverage-main-subtitle { font-size: 1.05rem; color: var(--text-muted); line-height: 1.6; max-width: 650px; margin: 0 auto; }
 
-/* Estilo base para cards colapsáveis (Acordeão) */
-.accordion-header {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 25px;
-    background: transparent;
+.coverage-group {
+    background-color: var(--services-card-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
-    transition: background 0.3s;
-}
-.accordion-header:hover { background: rgba(255,255,255,0.03); }
-.accordion-header h3, .accordion-header h4 { color: var(--text-heading); font-size: 1.1rem; }
-.cert-premium-card .accordion-header h3 { color: var(--cert-gold); }
-.accordion-icon { color: var(--text-muted); transition: transform 0.4s ease; }
-
-.accordion-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-    background: transparent;
-    padding: 0 25px;
+    padding: 30px;
 }
 
-/* Quando estiver aberto */
-.accordion-body.active {
-    max-height: 500px; /* Altura suficiente para o conteúdo */
-    padding: 0 25px 25px 25px;
+.coverage-accordion-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+.ports-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.ports-grid span { background-color: var(--bg-main); padding: 10px 14px; border-radius: 6px; font-size: 0.9rem; color: var(--text-muted); text-align: center; border: 1px solid var(--border); transition: all 0.2s ease; }
+.ports-grid span:hover {
+    background-color: var(--bg-surface);
+    color: var(--text-heading);
+    border-color: var(--primary);
 }
 
-.cert-premium-card .accordion-body {
-    border-top: 1px solid var(--border);
+.coverage-group-title {
+    color: var(--text-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
 }
-.cert-premium-card .accordion-body.active {
-    padding-top: 25px;
-}
-
-.coverage-group { background-color: var(--services-card-bg); border: 1px solid var(--border); border-radius: 8px; }
-
-.coverage-accordion-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.ports-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-.ports-grid span { background-color: var(--bg-main); padding: 8px 12px; border-radius: 4px; font-size: 0.9rem; color: var(--text-muted); }
 
 /* INSTITUCIONAL & METRICAS */
 .sobre-corporativa { display: flex; flex-direction: column; background-color: var(--sobre-lower-bg); position: relative; padding-bottom: 100px; transition: background-color 0.3s; }

@@ -1,13 +1,13 @@
 // SISTEMA DE DICIONÁRIO DE TRADUÇÃO COMPLETO
 const translations = {
     pt: {
-        "page-title": "SWI - Sea World Inspection | Vistorias Marítimas e IHM",
+        "page-title": "SWI - Sea World Inspection | Vistorias Marítimas",
         "nav-services": "SERVIÇOS",
         "nav-about": "SOBRE",
         "nav-coverage": "COBERTURA",
         "nav-contact": "CONTATO",
         "hero-tagline": "Excelência Operacional Marítima",
-        "hero-title": "Vistorias Técnicas de Alta Precisão e Conformidade IHM",
+        "hero-title": "Vistorias Técnicas de Alta Precisão",
         "hero-desc": "Garantindo segurança jurídica, controle rigoroso de perdas e conformidade internacional para navios, cargas e operações de bunker nos principais portos.",
         "btn-inspector": "Falar com Inspetor Técnico",
         "btn-services": "Conhecer Serviços",
@@ -18,12 +18,12 @@ const translations = {
         "cert-ukata-title": "UKATA",
         "cert-ukata-badge": "ID: 2625649 | Certificação Internacional",
         "cert-dnv-bold": "HazMat Training LITE",
-        "cert-dnv-desc": "Qualificação técnica oficial para o desenvolvimento de Inventários de Materiais Perigosos (IHM) e Visual Sampling Plans conforme regras da UE.",
+        "cert-dnv-desc": "Qualificação técnica oficial para o desenvolvimento de Inventários de Materiais Perigosos e Visual Sampling Plans conforme regras da UE.",
         "cert-dnv-title": "DNV GL",
         "cert-dnv-badge": "ID: 3437995 | Norma IMO",
         
         "services-main-title": "Soluções técnicas para toda a cadeia marítima",
-        "services-main-subtitle": "12 frentes de serviço organizadas em categorias especializadas para atender às exigências regulatórias internacionais.",
+        "services-main-subtitle": "Nossas frentes de serviço são organizadas em categorias especializadas para atender às exigências regulatórias internacionais.",
         "cat1-title": "Eficiência & Combustível",
         "cat1-desc": "Controle técnico rigoroso para operações de bunkering e movimentação de granéis líquidos",
         "s1-title": "Draft Survey",
@@ -48,8 +48,6 @@ const translations = {
         
         "cat3-title": "Contratos & Meio Ambiente",
         "cat3-desc": "Conformidade regulatória e jurídica para proteção das partes em contratos de afretamento",
-        "s9-title": "IHM – Inventory Hazmat Material",
-        "s9-desc": "Inventário de materiais perigosos a bordo conforme IMO",
         "s10-title": "On/Off Hire Survey",
         "s10-desc": "Inspeção de condição no início e fim de contrato de afretamento",
         "s11-title": "Condition Survey",
@@ -62,27 +60,21 @@ const translations = {
         "coverage-main-subtitle": "Mobilização rápida para garantir que nenhuma operação seja interrompida por falta de vistoria técnica.",
         "coverage-national": "Nacional",
         "coverage-international": "Internacional",
-        "port-santos": "Santos – SP",
-        "port-rio": "Rio de Janeiro – RJ",
         "port-paranagua": "Paranaguá – PR",
-        "port-itajai": "Itajaí – SC",
-        "port-poa": "Porto Alegre – RS",
-        "port-salvador": "Salvador – BA",
-        "port-suape": "Suape – PE",
+        "port-santos": "Santos – SP",
+        "port-saochico": "São Francisco do Sul – SC",
+        "port-tramandai": "Tramandaí – RS",
+        "port-riogrande": "Rio Grande – RS",
         "port-manaus": "Manaus – AM",
-        "port-macae": "Macaé – RJ",
-        "port-vitoria": "Vitória – ES",
-        "port-saoseba": "São Sebastião – SP",
-        "port-aratu": "Aratu – BA",
-        "port-buenosaires": "Buenos Aires – AR",
-        "port-montevideo": "Montevidéu – UY",
-        "port-rotterdam": "Roterdã – NL",
-        "port-mombasa": "Mombasa – KE",
+        "port-rosario": "Rosário – AR",
+        "port-sanlorenzo": "San Lorenzo – AR",
+        "port-bahiablanca": "Bahía Blanca – AR",
+        "port-necochea": "Necochea – AR",
 
         "mvv-m-title": "MISSÃO",
         "mvv-m-desc": "Prover inteligência pericial de alta precisão nas operações marítimas, mitigando perdas e assegurando total conformidade regulatória para nossos parceiros globais.",
         "mvv-v-title": "VISÃO",
-        "mvv-v-desc": "Consolidar-se como a principal referência independente em auditorias navais e laudos IHM de alta complexidade nos principais complexos portuários nacionais.",
+        "mvv-v-desc": "Consolidar-se como a principal referência independente em auditorias navais de alta complexidade nos principais complexos portuários nacionais.",
         "mvv-val-title": "VALORES",
         "mvv-val-desc": "Isenção técnica absoluta, precisão matemática irretocável, agilidade operacional de pronta resposta e estrito compromisso socioambiental.",
 
@@ -135,13 +127,13 @@ const translations = {
         "footer-dev-credit": "Desenvolvido com precisão técnica para o mercado marítimo global."
     },
     en: {
-        "page-title": "SWI - Sea World Inspection | Marine Surveys & IHM",
+        "page-title": "SWI - Sea World Inspection | Marine Surveys",
         "nav-services": "SERVICES",
         "nav-about": "ABOUT US",
         "nav-coverage": "COVERAGE",
         "nav-contact": "CONTACT",
         "hero-tagline": "Maritime Operational Excellence",
-        "hero-title": "High-Precision Marine Surveys & IHM Compliance",
+        "hero-title": "High-Precision Marine Surveys",
         "hero-desc": "Ensuring legal security, strict loss control, and international compliance for vessels, cargo, and bunker operations across major ports.",
         "btn-inspector": "Contact Technical Inspector",
         "btn-services": "View Services",
@@ -152,12 +144,12 @@ const translations = {
         "cert-ukata-title": "UKATA",
         "cert-ukata-badge": "ID: 2625649 | International Certification",
         "cert-dnv-bold": "HazMat Training LITE",
-        "cert-dnv-desc": "Official technical qualification for developing Inventories of Hazardous Materials (IHM) and Visual Sampling Plans under EU laws.",
+        "cert-dnv-desc": "Official technical qualification for developing Inventories of Hazardous Materials and Visual Sampling Plans under EU laws.",
         "cert-dnv-title": "DNV GL",
         "cert-dnv-badge": "ID: 3437995 | IMO Standard",
         
         "services-main-title": "Technical solutions for the entire maritime chain",
-        "services-main-subtitle": "12 lines of service organized into specialized categories to meet international regulatory requirements.",
+        "services-main-subtitle": "Our service fronts are organized into specialized categories to meet international regulatory requirements.",
         "cat1-title": "Fuel & Efficiency",
         "cat1-desc": "Strict technical control for bunkering operations and liquid bulk handling",
         "s1-title": "Draft Survey",
@@ -182,8 +174,6 @@ const translations = {
         
         "cat3-title": "Contracts & Environment",
         "cat3-desc": "Regulatory and legal compliance for party protection in charter contracts",
-        "s9-title": "IHM – Inventory Hazmat Material",
-        "s9-desc": "Inventory of hazardous materials onboard according to IMO",
         "s10-title": "On/Off Hire Survey",
         "s10-desc": "Condition inspection at delivery and redelivery of charter contracts",
         "s11-title": "Condition Survey",
@@ -196,27 +186,21 @@ const translations = {
         "coverage-main-subtitle": "Fast mobilization to ensure that no operation is halted due to a lack of technical surveying expertise.",
         "coverage-national": "National",
         "coverage-international": "International",
-        "port-santos": "Santos – SP",
-        "port-rio": "Rio de Janeiro – RJ",
         "port-paranagua": "Paranaguá – PR",
-        "port-itajai": "Itajaí – SC",
-        "port-poa": "Porto Alegre – RS",
-        "port-salvador": "Salvador – BA",
-        "port-suape": "Suape – PE",
+        "port-santos": "Santos – SP",
+        "port-saochico": "São Francisco do Sul – SC",
+        "port-tramandai": "Tramandaí – RS",
+        "port-riogrande": "Rio Grande – RS",
         "port-manaus": "Manaus – AM",
-        "port-macae": "Macaé – RJ",
-        "port-vitoria": "Vitória – ES",
-        "port-saoseba": "São Sebastião – SP",
-        "port-aratu": "Aratu – BA",
-        "port-buenosaires": "Buenos Aires – AR",
-        "port-montevideo": "Montevideo – UY",
-        "port-rotterdam": "Rotterdam – NL",
-        "port-mombasa": "Mombasa – KE",
+        "port-rosario": "Rosario – AR",
+        "port-sanlorenzo": "San Lorenzo – AR",
+        "port-bahiablanca": "Bahía Blanca – AR",
+        "port-necochea": "Necochea – AR",
 
         "mvv-m-title": "MISSION",
         "mvv-m-desc": "To provide high-precision pericial intelligence in maritime operations, mitigating losses and ensuring complete regulatory compliance for our global partners.",
         "mvv-v-title": "VISION",
-        "mvv-v-desc": "To consolidate as the primary independent reference in naval auditing and complex IHM reporting across major national port complexes.",
+        "mvv-v-desc": "To consolidate as the primary independent reference in complex naval auditing across major national port complexes.",
         "mvv-val-title": "VALUES",
         "mvv-val-desc": "Absolute technical impartiality, unblemished mathematical accuracy, rapid response operational agility, and strict environmental commitment.",
 
@@ -432,24 +416,3 @@ window.addEventListener('load', () => {
         }, 1700);
     }
 });
-
-function toggleAccordion(element) {
-    const body = element.nextElementSibling;
-    const icon = element.querySelector('.accordion-icon');
-
-    // Verifica se o item clicado já está ativo
-    const wasActive = body.classList.contains('active');
-
-    // Fecha todos os acordeões abertos
-    document.querySelectorAll('.accordion-body.active').forEach(activeBody => {
-        activeBody.classList.remove('active');
-        const otherIcon = activeBody.previousElementSibling.querySelector('.accordion-icon');
-        if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
-    });
-
-    // Se o item clicado não estava ativo, ele é aberto
-    if (!wasActive) {
-        body.classList.add('active');
-        if (icon) icon.style.transform = 'rotate(180deg)';
-    }
-}
